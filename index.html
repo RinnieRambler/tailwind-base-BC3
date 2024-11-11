@@ -2,4 +2,210 @@
 layout: default
 title: Homepage
 ---
-<h1 class="text-4xl font-bold text-green-900">Welcome to your homepage!</h1>
+
+<html>
+
+    <head>
+
+        <!-- SEO  -->
+        <title>My First Tailwind Project</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- GOOGLE FONTS -->
+      
+        <!-- TAILWIND -->
+        <script src="https://cdn.tailwindcss.com"></script>
+      
+        <!-- TAILWIND CUSTOMIZE & EXTEND -->
+        <script>
+          tailwind.config = {
+            theme: {
+              extend: {
+                colors: {
+                  clifford: '#da373d',
+                }
+              }
+            }
+          }
+        </script>
+      
+      <!-- TAILWIND CUSTOM CLASSES -->
+      <style type="text/tailwindcss">
+        @layer components {
+          .btn-primary {
+            @apply py-2 px-5 bg-violet-500 text-white font-semibold rounded-full shadow-md hover:bg-violet-700;
+          }
+        }
+      </style>
+      
+        <!-- CUSTOM CSS LINKS -->
+        <link rel="stylesheet" href="style.css">
+      
+      </head>
+<body class="bg-[#f4eee0]">
+    <!--------Header banner --------->
+    <header class="p-8 min-h-screen bg-cover bg-center flex flex-col relative" style="background-image: url('https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+      <nav class="grid md:grid-cols-3 uppercase">
+        <div class="hidden md:flex items-center justify-around">
+          <a>Nav 1</a>
+          <a>Nav 2</a>
+          <a>Nav 3</a>
+        </div>
+        <div class="text-center">
+          <a class="text-white text-xl">Logo</a>
+        </div>
+        <div class="hidden md:flex items-center justify-around">
+          <a>Nav 4</a>
+          <a>Nav 5</a>
+          <a>Nav 6</a>
+        </div>
+        <div class="burger-button md:hidden">
+          <span class="burger-top"></span>
+          <span class="burger-middle"></span>
+          <span class="burger-bottom"></span>
+        </div>
+        <div class="burger-menu md:hidden">
+          <a href="">Nav 1</a>
+          <a href="">Nav 2</a>
+          <a href="">Nav 3</a>
+          <a href="">Nav 4</a>
+          <a href="">Nav 5</a>
+          <a href="">Nav 6</a>
+       </div>
+      </nav>
+      <div class="text-center text-white p-8 m-auto">
+        <div>
+          <hr>
+          <h1 class="uppercase text-6xl p-4">This is a heading</h1> 
+          <p class="text-xl">This is a subheading</p>
+        </div>
+      </div>
+    </header>
+    
+    <!-----------Our Services section ---------->
+    
+    <section class="p-20">
+    <div class="max-w-5xl m-auto">
+      <h2 class="uppercase py-4 text-3xl">Our Services</h2>
+      <div class="grid md:grid-cols-3 gap-6 text-center">
+        <div>
+          <div class="aspect-square bg-cover bg-bottom" style="background-image: url('https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div>
+          <h3 class="uppercase tracking-wider py-4">Duis Aute</h3>
+          <p class="border-t-2  border-black p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sint tempora excepturi maxime reprehenderit obcaecati commodi, consectetur cumque quis asperiores, ea nihil, delectus autem omnis debitis animi ipsam. Beatae, exercitationem!</p>
+        </div>
+        <div>
+          <div class="aspect-square bg-cover bg-bottom" style="background-image: url('https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div>
+          <h3 class="uppercase tracking-wider py-4">Duis Aute</h3>
+          <p class="border-t-2  border-black py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sint tempora excepturi maxime reprehenderit obcaecati commodi, consectetur cumque quis asperiores, ea nihil, delectus autem omnis debitis animi ipsam. Beatae, exercitationem!</p>
+        </div>
+        <div>
+          <div class="aspect-square bg-cover bg-bottom" style="background-image: url('https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div>
+          <h3 class="uppercase tracking-wider py-4">Duis Aute</h3>
+          <p class="border-t-2  border-black p-4"x>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sint tempora excepturi maxime reprehenderit obcaecati commodi, consectetur cumque quis asperiores, ea nihil, delectus autem omnis debitis animi ipsam. Beatae, exercitationem!</p>
+        </div>
+      </div>
+    </div>
+    </section>
+    
+    <!-----------bg image with overlap text box -------------->
+    
+    <section class="md:min-h-[75vh] border-t border-black md:grid custom-grid bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+      <div></div>
+      <div class="bg-[#f4eee0]/50 md:bg-[#f4eee0] p-8 flex flex-col justify-center border-x border-black">
+        <h2 class="text-3xl uppercase">Who are we</h2>
+        <p class="text-sm py-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nesciunt commodi voluptas hic ipsum, dolorum dolores. Ea voluptatem accusantium temporibus ullam! Repudiandae rerum eius culpa numquam architecto doloremque corporis et!</p>
+        <button class="text-sm uppercase border border-black max-w-36 p-2">Find out more</button>
+      </div>
+      <div></div>
+    </section>
+    
+    <!----------brand name section ---------->
+    
+    <section class="grid grid-cols-2 md:grid-cols-6 gap-[1px] bg-black p-[1px]">
+      <p class="text-center bg-[#f4eee0] p-2">Brand name</p>
+      <p class="text-center bg-[#f4eee0] p-2">Brand name</p>
+      <p class="text-center bg-[#f4eee0] p-2">Brand name</p>
+      <p class="text-center bg-[#f4eee0] p-2">Brand name</p>
+      <p class="text-center bg-[#f4eee0] p-2">Brand name</p>
+      <p class="text-center bg-[#f4eee0] p-2">Brand name</p>
+    </section>
+    
+    <!---------- Gallery section ------------>
+    <section class="p-20 ">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center max-w-2xl flex items-center flex-col p-8 m-auto">
+        <h2 class="p-4 text-3xl uppercase">Duis aute irure</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore ad ea adipisci consequatur impedit accusantium molestias deserunt eum nam eius. Nisi laudantium soluta magnam quod magni itaque harum? Assumenda, expedita.</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class=" bg-cover aspect-square" style="background-image: url('https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+        <div class="bg-cover aspect-square" style="background-image: url('https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+        <div class=" bg-cover aspect-square" style="background-image: url('https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+        <div class=" bg-cover aspect-square" style="background-image: url('https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+        <div class=" bg-cover aspect-square" style="background-image: url('https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+        <div class=" bg-cover aspect-square" style="background-image: url('https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+      </div>
+      <div class="flex justify-center items-center">
+        <button class="text-sm uppercase border border-black py-2 px-4 mt-6">sign up</button>
+      </div>
+    </div>
+    </section>
+    
+    <!----------- Contact form section ---------->
+    
+    <section class="lg:grid custom-contact-grid min-h-[75vh] border border-black">
+      <div class="bg-cover bg-center border-r border-black" style="background-image: url('https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+      <div class="p-20">
+        <h2 class="uppercase text-2xl py-4">contact us</h2>
+        <form class="">
+          <input type="text" id="name" name="name" placeholder="Name" class="block w-full bg-transparent border-b border-black placeholder:text-black placeholder:focus:text-gray-400 placeholder:uppercase placeholder:text-sm mb-4 focus:outline-none focus-visible:outline-none">
+          <input type="email" id="Email" name="Email" class="block w-full bg-transparent border-b border-black placeholder:text-black placeholder:focus:text-gray-400 placeholder:uppercase placeholder:text-sm mb-4 focus:outline-none focus-visible:outline-none" placeholder="Email" required>
+          <label for="Message" class="block uppercase text-sm text-black">Your message</label>
+          <textarea id="Message" name="Message" class="block w-full bg-transparent border border-black mb-4 focus:outline-none focus-visible:outline-none resize-none" rows="6" maxlength="3000" required></textarea>
+          <div class="text-right">
+            <input type="submit" value="Send" class="border border-black py-2 px-8 uppercase text-sm">
+          </div>
+        </form>
+      </div>
+    </section>
+    
+    <!------------ footer section ----------->
+    <footer class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 p-20 border-b border-black">
+      <div class="">
+        <h4 class="uppercase py-4">Lorem ipsum</h4>
+        <a class="uppercase">dolor sit amet</a>
+        <a class="uppercase">consectetur</a>
+        <a class="uppercase">adipisicing elit</a>
+        <a class="uppercase">sed do</a>
+      </div>
+      <div>
+        <h4 class="uppercase py-4">Lorem ipsum</h4>
+        <a class="uppercase">dolor sit amet</a>
+        <a class="uppercase">consectetur</a>
+        <a class="uppercase">adipisicing elit</a>
+        <a class="uppercase">sed do</a>
+      </div>
+      <div>
+        <h4 class="uppercase py-4">Lorem ipsum</h4>
+        <a class="uppercase">dolor sit amet</a>
+        <a class="uppercase">consectetur</a>
+        <a class="uppercase">adipisicing elit</a>
+        <a class="uppercase">sed do</a>
+      </div>
+      <div class="">
+        <h4 class="uppercase py-4">subscribe to our newsletter</h4>
+        <input class="min-w-full bg-inherit border border-black">
+        <button class="py-4">
+          subscribe
+        </button>
+      </div>
+      <div class="my-6  col-span-full">
+        <p class="">Terms of use</p>
+      </div>
+    </footer>
+      
+    <script src="/main.js"></script>
+    
+    </body>
+</html>    
