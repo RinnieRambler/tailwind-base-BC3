@@ -1,0 +1,38 @@
+<!--------Header banner --------->
+<header class="p-8 min-h-screen bg-cover bg-center flex flex-col relative" style="background-image: url('https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+    <nav class="grid md:grid-cols-3 uppercase">
+      <div class="hidden md:flex items-center justify-around">
+        <a>Nav 1</a>
+        <a>Nav 2</a>
+        <a>Nav 3</a>
+      </div>
+      <div class="text-center">
+        <a class="text-white text-xl">Logo</a>
+      </div>
+      <div class="hidden md:flex items-center justify-around">
+        <a>Nav 4</a>
+        <a>Nav 5</a>
+        <a>Nav 6</a>
+      </div>
+      <div class="burger-button md:hidden">
+        <span class="burger-top"></span>
+        <span class="burger-middle"></span>
+        <span class="burger-bottom"></span>
+      </div>
+      <div class="burger-menu md:hidden">
+        <a href="">Nav 1</a>
+        <a href="">Nav 2</a>
+        <a href="">Nav 3</a>
+        <a href="">Nav 4</a>
+        <a href="">Nav 5</a>
+        <a href="">Nav 6</a>
+     </div>
+    </nav>
+    <div class="text-center text-white p-8 m-auto">
+      <div>
+        <hr>
+        <h1 class="uppercase text-6xl p-4">{{page.banner.heading}}</h1> 
+        <p class="text-xl">{{page.banner.description}}</p>
+      </div>
+    </div>
+  </header>
