@@ -14,26 +14,16 @@ collections_config:
 _structures:
   blocks:
     style: select
-    id_key:
     values:
-      - id:
-        default:
-        icon:
-        image:
-        label:
-        picker_preview:
-        preview:
-        tags:
-        value:
-      - id:
-        default:
-        icon:
-        image:
-        label:
-        picker_preview:
-        preview:
-        tags:
-        value:
+    -  label: Ticket banner
+       value:
+              _id: service_grid
+              heading: Our Services
+              offerings: 
+              - image: https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                heading: Duis Aute
+                description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sint tempora excepturi maxime reprehenderit obcaecati commodi, consectetur cumque quis asperiores, ea nihil, delectus autem omnis debitis animi ipsam. Beatae, exercitationem!
+              color-scheme: leaf-500
 _snippets_imports:
   jekyll: true
 timezone: Asia/Makassar
