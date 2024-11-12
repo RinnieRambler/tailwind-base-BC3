@@ -1,0 +1,18 @@
+<!-----------Our Services section ---------->
+
+<section class="p-20">
+  <div class="max-w-5xl m-auto">
+    <h2 class="uppercase py-4 text-3xl">{{block.heading}}</h2>
+    <div class="grid md:grid-cols-3 gap-6 text-center">
+
+      {% for item in block.offerings %}
+      <div>
+        <div class="aspect-square bg-cover bg-bottom" style="background-image: url('{{item.image}}')"></div>
+        <h3 class="uppercase tracking-wider py-4">{{item.heading}}</h3>
+        <p class="border-t-2  border-black p-4">{{item.description}}</p>
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+  </section>

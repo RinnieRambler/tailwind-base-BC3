@@ -1,0 +1,18 @@
+ <!---------- Gallery section ------------>
+ <section class="p-20 ">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center max-w-2xl flex items-center flex-col p-8 m-auto">
+      <h2 class="p-4 text-3xl uppercase">Duis aute irure</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore ad ea adipisci consequatur impedit accusantium molestias deserunt eum nam eius. Nisi laudantium soluta magnam quod magni itaque harum? Assumenda, expedita.</p>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+      {% for item in block.images %}
+      <div class=" bg-cover aspect-square" style="background-image: url('{{item.image}}');"></div>
+{% endfor %}
+    </div>
+
+    <div class="flex justify-center items-center">
+      <button class="text-sm uppercase border border-black py-2 px-4 mt-6">sign up</button>
+    </div>
+  </div>
+  </section>
