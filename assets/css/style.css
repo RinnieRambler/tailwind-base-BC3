@@ -440,9 +440,6 @@ video {
 .relative {
   position: relative;
 }
-.col-span-full {
-  grid-column: 1 / -1;
-}
 .m-auto {
   margin: auto;
 }
@@ -683,10 +680,23 @@ video {
   .custom-contact-grid {
     grid-template-columns: 1fr 900px;
   }
+
+  header a:hover {
+    text-shadow: 1px 0 0 currentColor;
+  }
+
+  footer a:hover {
+    text-shadow: 1px 0 0 currentColor;
+  }
   
   footer a {
     display: block;
     font-size: small;
+  }
+
+  button:hover {
+    background-color: black;
+    color:#f4eee0;
   }
   
   .burger-button {
@@ -800,6 +810,16 @@ video {
   .placeholder\:text-black::placeholder {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+  
+  .hover\:bg-black:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+  
+  .hover\:text-\[\#f4eee0\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(244 238 224 / var(--tw-text-opacity));
 }
   
   .focus\:outline-none:focus {
