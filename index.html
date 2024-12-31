@@ -5,17 +5,17 @@ banner:
     heading: Radiance, Redefined
     description: Clean, sustainable skincare crafted for your glow and the planet. 
 services: 
-    heading: Our Products
+    heading: Our Collections
     offerings: 
-        - image: https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-          heading: Bali glow oil
-          description: Achieve sun-kissed radiance with our Bali Glow Oil. Infused with natural ingredients, this luxurious body oil moisturises the skin, leaving it luminous and delicately scented, reminiscent of Bsli's tropicial allure.
-        - image: https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-          heading: hair and body wash
-          description: Simplify your routine with our versatile Hair & Body Wash. Formulated with gentle, plant-based cleansers, it effectively purifies and revitalises both hair and skin, enveloping you in a refreshing aroma inspired by Bali's nature landscapes.
-        - image: https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-          heading: aphrodite rose infused oil
-          description: Experience the essence of romance with our Aphrodite Rose Infused Oil Roller. This portable elixir combines nourishin goils with rose petals to provide hydration and a delicate fragrance, promoting relaxation and a sense of well-being.
+        - image: /assets/images/heritage-sculpture.jpg
+          heading: Heritage
+          description: Celebrate timeless traditions with the Heritage Collection. Rooted in Bali's rich cultural legacy, these formulations combine ancient beauty rituals with sustainably sourced natural ingredients. Immerse yourself in wisdom of the past for deeply nourishing care that honours the earth.
+        - image: /assets/images/goddess.jpg
+          heading: goddess
+          description: Awaken your inner goddess with our Goddess Collection. Infused with luxurious botanicals and holistic formulations, this line inspires self-love and radiant confidence. Embrace the divine within and indulge in the magic of nature's finest treasures.
+        - image: /assets/images/mystic-incense.jpg
+          heading: mystic
+          description: Step into a world of mystery with the Mystic Collection. Designed to connect mind, body, and soul, these products feature exotic ingredients and aromatherapeutic blends. Experience transcendence with every scent and texture
 overlap:
     image: https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
     heading: Who are we
@@ -46,7 +46,7 @@ contact:
 
 ---
 
-<!-----------Our Services section ---------->
+<!-----------Our Collections section ---------->
 
 <section class="p-20">
     <div class="max-w-5xl m-auto">
@@ -55,7 +55,7 @@ contact:
 
         {% for item in page.services.offerings %}
         <div>
-          <div class="aspect-square bg-cover bg-bottom" style="background-image: url('{{item.image}}')"></div>
+          <div class="aspect-square bg-cover bg-center" style="background-image: url('{{item.image}}')"></div>
           <h3 class="uppercase tracking-wider py-4">{{item.heading}}</h3>
           <p class="border-t-2  border-black p-4">{{item.description}}</p>
         </div>
