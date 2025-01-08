@@ -51,13 +51,13 @@ contact:
 <section class="p-20">
     <div class="max-w-5xl m-auto">
       <h2 class="uppercase py-4 text-3xl">{{page.services.heading}}</h2>
-      <div class="grid md:grid-cols-3 gap-6 text-center">
+      <div class="grid md:grid-cols-3 gap-8 text-center">
 
         {% for item in page.services.offerings %}
         <div>
-          <div class="aspect-square bg-cover bg-center" style="background-image: url('{{item.image}}')"></div>
-          <h3 class="uppercase tracking-wider py-4">{{item.heading}}</h3>
-          <p class="border-t-2  border-black p-4">{{item.description}}</p>
+          <div class="aspect-square bg-cover bg-center " style="background-image: url('{{item.image}}')"></div>
+          <h3 class="uppercase text-left md:text-center tracking-wider py-4">{{item.heading}}</h3>
+          <p class="text-left md:text-center text-sm md:text-base pl-0 border-t-2  border-black p-4">{{item.description}}</p>
         </div>
         {% endfor %}
 
@@ -81,7 +81,7 @@ contact:
     
     <section class="grid grid-cols-2 md:grid-cols-6 gap-[1px] bg-black p-[1px]">
       {% for item in page.brand-names %}
-      <p class="text-center bg-[#f4eee0] p-2">{{item.title}}</p>
+      <p class="text-center text-sm lg:text-base bg-[#f4eee0] p-2">{{item.title}}</p>
       {% endfor %}
 
     </section>
